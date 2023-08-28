@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header id="regInfo">You are here because you wanted to register on the portal.</header>
+    <form action="success.html">
+        <section id="topsec">
+            <h1>Student Details</h1>
+            <a href="index.html"><img src="imgs/back.png" alt="" style="width: 40px;"></a>
+        </section>
+        <section>
+            <label for="usn">USN</label>
+            <input type="text" name="usn" id="usn" placeholder="NNM2xCSxxx">
+        </section>
+        <section>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="">
+        </section>
+        <section>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="nnm2xcsxxx@nmamit.in">
+        </section>
+        <section>
+            <label for="semester">Semester</label>
+            <div class="dropdown">
+                <input class="dropbtn" type="number" name="semester" id="semester" placeholder="">
+                <div class="dropdown-content">
+                    <p onclick="document.getElementById('semester').value=1">1</p>
+                    <p onclick="document.getElementById('semester').value=2">2</p>
+                    <p onclick="document.getElementById('semester').value=3">3</p>
+                    <p onclick="document.getElementById('semester').value=4">4</p>
+                    <p onclick="document.getElementById('semester').value=5">5</p>
+                    <p onclick="document.getElementById('semester').value=6">6</p>
+                    <p onclick="document.getElementById('semester').value=7">7</p>
+                    <p onclick="document.getElementById('semester').value=8">8</p>
+                </div>
+            </div>
+            <label for="section">Section</label>
+            <input type="text" name="section" id="section" placeholder="">
+        </section>
+        <section>
+            <label for="branch">Branch</label>
+            <input type="text" name="branch" id="branch" placeholder="">
+        </section>
+        <button>Submit</button>
+    </form>
+    <button><p style="padding: 10px; color: white;">Out of the box, literally! Here is a link to <a style="text-decoration: none; color: yellow;" href="http://127.0.0.1:3002/index.html"  rel="noopener noreferrer">My Portfolio.</a> Please do check it out.</p></button>
+</body>
+</html>
